@@ -1,0 +1,10 @@
+Những thành phần cơ bản thường gặp của 1 website:
+
+1. Header.
+2. Navigation.
+3. Breadcrum = Indicator/ giúp user biết mình đang ở đâu trên trang web.
+4. Sidebar.
+5. Content.
+6. Slider.
+7. Banner.
+8. Footer.

@@ -1,3 +1,5 @@
+https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+
 Những thành phần cơ bản thường gặp của 1 website:
 
 1. Header.

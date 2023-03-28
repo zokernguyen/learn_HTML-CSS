@@ -9,6 +9,15 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.clear {
+  clear: both;
+}
+/* deal with float attribute, causing shrinking of float container element. */
+
+.white-text {
+  color: white !important;
+}
+
 #main {
 }
 
@@ -19,6 +28,7 @@ html {
   top: 0px;
   left: 0px;
   right: 0px;
+  z-index: 1;
 }
 
 #nav {
@@ -97,15 +107,134 @@ html {
 }
 
 #slider {
-  min-height: 500px;
   background-color: gray;
   margin-top: 46px;
+  padding-top: 50%;
+  background: url("/w3_band/assets/img/slider/slider1.jpg") top center / cover
+    no-repeat;
+  position: relative;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 48px;
+  color: #fff;
+  /* centering */
+  /* left: 50%;
+  transform: translateX(-50%);
+  text-align: center; */
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#slider .text-decsription {
+  font-size: 15px;
+  margin-top: 25px;
 }
 
 #content {
   height: 1000px;
-  background-color: #ccc;
+  background-color: #fff;
 }
 
+#content .content-section {
+  padding: 64px 0;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content .section-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+#content .section-sub-heading {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 25px;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+#content .about-text {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+#content .member-list {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  /* overflow: hidden; */
+}
+
+#content .member-name {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#content .member-item {
+  float: left;
+}
+
+#content .member-item img {
+  width: 154px;
+  border-radius: 5%;
+}
+
+/* Tour Section */
+
+#content .tour-section {
+  background-color: #000;
+}
+
+.tour-section .tour-schedule {
+  background-color: #fff;
+}
+
+.tour-schedule li {
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+  list-style: none;
+}
+
+.tour-schedule .month-of-event {
+}
+
+.tour-schedule .sold-out {
+  color: #fff;
+  background-color: #f44336;
+  padding: 3px 4px;
+  margin-left: 16px;
+  border-radius: 5px;
+}
+
+.tour-schedule .available-tours {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -2px;
+  /*use margin with float (turn to block) */
+}
+
+/* Footer Section */
 #footer {
 }
